@@ -1,19 +1,6 @@
 const gg = function (a) { var d = "area base br col embed hr img input keygen link meta param source track wbr".split(" "); if (a) { a.style ? a.style = a.style.split("\n").join(" ") : se = 0; a.tag ? se = 0 : a.tag = "div"; var b = "<" + a.tag, c; for (c in a) "tag" != c && "html" != c ? b += " " + c + "='" + a[c] + "'" : se = 0; d.includes(a.tag) ? a = b + "/>" : (b = a.html ? b + (">" + a.html) : b + ">", a = b + ("</" + a.tag + ">")); return a } };
 const analytics = firebase.analytics();
 const db = firebase.firestore();
-var storage = firebase.storage();
-var Produtos = []
-
-class Item {
-  constructor(id, nome, valor, imagem, detalhes) {
-    this.id = id,
-    this.nome = nome,
-      this.valor = valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }),
-      this.imagem = imagem,
-      this.detalhes = detalhes,
-      this.quantidade = 0
-  }
-}
 
 const HTML = {
 
@@ -253,12 +240,11 @@ const Theme = {
 
 const App = {
   Init() {
-    console.log("XD")
-
     this.LoadCache();
     this.ConfigEmpresa();
     // this.ConfigHome();
     // this.LoadAbout();
+    // this.LoadCarrossel();
   },
 
   LoadCache() {
@@ -329,7 +315,6 @@ const App = {
       console.log("Error getting document:", error);
     });
   }
-
 }
 
 App.Init();

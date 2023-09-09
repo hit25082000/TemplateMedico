@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-pt-16 scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -18,418 +18,458 @@
      ga('send', 'pageview');
   </script>
   <meta name="google-site-verification" content="X6xXlBom5xKV4-Vw4p8kRfnLX-F_SEBoEvM2lTafGPo" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-    }
-  </script>
   <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-storage-compat.js"></script>
   <script type="module" src="./Js/app.js" defer></script>
   <script src="./Js/script.js" defer></script>
-  <link href="Css/style.css" rel="stylesheet">
+  <link href="Css/output.css" rel="stylesheet">
   <link class="titleIcon" rel="icon" type="image/x-icon" href="">
 </head>
 
 <body class="dark:bg-gray-900 dark:text-gray-100">
   <header>
-    
-<nav class="fixed bg-white w-screen border-gray-200 dark:bg-gray-900">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="https://flowbite.com/" class="flex items-center">
-      <img src="https://flowbite.com/docs/images/logo.svg" id="EmpresaIcone" class="h-8 mr-3" alt="Flowbite Logo" />
-      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white" id="EmpresaNome">Flowbite</span>
-  </a>
-  <div class="flex md:order-2">
-    <div class="gap-3 flex mr-5">
-      <a type="button" id="EmpresaFacebook" href="https://www.facebook.com/" class="btn btn-secundary hide">
-        <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="-204.79995 -341.33325 1774.9329 2047.9995">
-          <path
-            d="M1365.333 682.667C1365.333 305.64 1059.693 0 682.667 0 305.64 0 0 305.64 0 682.667c0 340.738 249.641 623.16 576 674.373V880H402.667V682.667H576v-150.4c0-171.094 101.917-265.6 257.853-265.6 74.69 0 152.814 13.333 152.814 13.333v168h-86.083c-84.804 0-111.25 52.623-111.25 106.61v128.057h189.333L948.4 880H789.333v477.04c326.359-51.213 576-333.635 576-674.373"
-            fill="#1877f2" />
-          <path
-            d="M948.4 880l30.267-197.333H789.333V554.609C789.333 500.623 815.78 448 900.584 448h86.083V280s-78.124-13.333-152.814-13.333c-155.936 0-257.853 94.506-257.853 265.6v150.4H402.667V880H576v477.04a687.805 687.805 0 00106.667 8.293c36.288 0 71.91-2.84 106.666-8.293V880H948.4"
-            fill="#fff" />
-        </svg>
-      </a>
-      <a type="button" id="EmpresaInstagram" href="https://www.facebook.com/" class="btn btn-secundary hide">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="25" width="25"
-          viewBox="-19.5036 -32.49725 169.0312 194.9835">
-          <defs>
-            <radialGradient fy="578.088" fx="158.429" gradientTransform="matrix(0 -1.98198 1.8439 0 -1031.399 454.004)"
-              gradientUnits="userSpaceOnUse" xlink:href="#a" r="65" cy="578.088" cx="158.429" id="c" />
-            <radialGradient fy="473.455" fx="147.694"
-              gradientTransform="matrix(.17394 .86872 -3.5818 .71718 1648.351 -458.493)" gradientUnits="userSpaceOnUse"
-              xlink:href="#b" r="65" cy="473.455" cx="147.694" id="d" />
-            <linearGradient id="b">
-              <stop stop-color="#3771c8" offset="0" />
-              <stop offset=".128" stop-color="#3771c8" />
-              <stop stop-opacity="0" stop-color="#60f" offset="1" />
-            </linearGradient>
-            <linearGradient id="a">
-              <stop stop-color="#fd5" offset="0" />
-              <stop stop-color="#fd5" offset=".1" />
-              <stop stop-color="#ff543e" offset=".5" />
-              <stop stop-color="#c837ab" offset="1" />
-            </linearGradient>
-          </defs>
-          <path
-            d="M65.033 0C37.891 0 29.953.028 28.41.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468-4.125 4.282-6.625 9.55-7.53 15.812-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28a27.22 27.22 0 0017.75-14.53c1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624-4.3-4.108-9.56-6.608-15.829-7.512C102.338.157 101.733.027 86.193 0z"
-            fill="url(#c)" />
-          <path
-            d="M65.033 0C37.891 0 29.953.028 28.41.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468-4.125 4.282-6.625 9.55-7.53 15.812-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28a27.22 27.22 0 0017.75-14.53c1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624-4.3-4.108-9.56-6.608-15.829-7.512C102.338.157 101.733.027 86.193 0z"
-            fill="url(#d)" />
-          <path
-            d="M65.003 17c-13.036 0-14.672.057-19.792.29-5.11.234-8.598 1.043-11.65 2.23-3.157 1.226-5.835 2.866-8.503 5.535-2.67 2.668-4.31 5.346-5.54 8.502-1.19 3.053-2 6.542-2.23 11.65C17.06 50.327 17 51.964 17 65s.058 14.667.29 19.787c.235 5.11 1.044 8.598 2.23 11.65 1.227 3.157 2.867 5.835 5.536 8.503 2.667 2.67 5.345 4.314 8.5 5.54 3.054 1.187 6.543 1.996 11.652 2.23 5.12.233 6.755.29 19.79.29 13.037 0 14.668-.057 19.788-.29 5.11-.234 8.602-1.043 11.656-2.23 3.156-1.226 5.83-2.87 8.497-5.54 2.67-2.668 4.31-5.346 5.54-8.502 1.18-3.053 1.99-6.542 2.23-11.65.23-5.12.29-6.752.29-19.788 0-13.036-.06-14.672-.29-19.792-.24-5.11-1.05-8.598-2.23-11.65-1.23-3.157-2.87-5.835-5.54-8.503-2.67-2.67-5.34-4.31-8.5-5.535-3.06-1.187-6.55-1.996-11.66-2.23-5.12-.233-6.75-.29-19.79-.29zm-4.306 8.65c1.278-.002 2.704 0 4.306 0 12.816 0 14.335.046 19.396.276 4.68.214 7.22.996 8.912 1.653 2.24.87 3.837 1.91 5.516 3.59 1.68 1.68 2.72 3.28 3.592 5.52.657 1.69 1.44 4.23 1.653 8.91.23 5.06.28 6.58.28 19.39s-.05 14.33-.28 19.39c-.214 4.68-.996 7.22-1.653 8.91-.87 2.24-1.912 3.835-3.592 5.514-1.68 1.68-3.275 2.72-5.516 3.59-1.69.66-4.232 1.44-8.912 1.654-5.06.23-6.58.28-19.396.28-12.817 0-14.336-.05-19.396-.28-4.68-.216-7.22-.998-8.913-1.655-2.24-.87-3.84-1.91-5.52-3.59-1.68-1.68-2.72-3.276-3.592-5.517-.657-1.69-1.44-4.23-1.653-8.91-.23-5.06-.276-6.58-.276-19.398s.046-14.33.276-19.39c.214-4.68.996-7.22 1.653-8.912.87-2.24 1.912-3.84 3.592-5.52 1.68-1.68 3.28-2.72 5.52-3.592 1.692-.66 4.233-1.44 8.913-1.655 4.428-.2 6.144-.26 15.09-.27zm29.928 7.97a5.76 5.76 0 105.76 5.758c0-3.18-2.58-5.76-5.76-5.76zm-25.622 6.73c-13.613 0-24.65 11.037-24.65 24.65 0 13.613 11.037 24.645 24.65 24.645C78.616 89.645 89.65 78.613 89.65 65S78.615 40.35 65.002 40.35zm0 8.65c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16 0-8.837 7.163-16 16-16z"
-            fill="#fff" />
-        </svg>
-      </a>
-      <a type="button" id="EmpresaWhatsApp" href="https://www.facebook.com/" class="btn btn-secundary hide">
-        <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" fill="green"
-          viewBox="-116.80905 -194.68125 1012.3451 1168.0875">
-          <path
-            d="M482.751 825.596c-13.025-.463-29.812-1.482-37.442-3.022-11.647-2.352-22.646-5.918-31.793-10.58-10.747-5.477-20.379-12.465-28.696-20.769-8.336-8.32-15.352-17.961-20.851-28.724-4.649-9.098-8.213-20.03-10.575-31.611-1.571-7.707-2.61-24.619-3.081-37.728a525.205 525.205 0 01-.289-15.49l-.046-287.576c0-3.185.097-10.121.287-15.485.463-13.024 1.482-29.811 3.023-37.441 2.351-11.646 5.918-22.646 10.579-31.793 5.478-10.748 12.465-20.378 20.769-28.696 8.32-8.335 17.962-15.351 28.724-20.851 9.099-4.648 20.031-8.213 31.611-10.575 7.707-1.571 24.62-2.61 37.729-3.08 5.356-.192 12.291-.29 15.489-.29l287.576-.046c3.186 0 10.122.096 15.484.287 13.025.464 29.813 1.482 37.442 3.023 11.647 2.352 22.647 5.919 31.793 10.579 10.747 5.478 20.379 12.466 28.696 20.769 8.335 8.321 15.351 17.961 20.851 28.724 4.648 9.099 8.214 20.03 10.575 31.611 1.572 7.707 2.61 24.621 3.081 37.729.192 5.357.289 12.291.289 15.489l.047 287.576c0 3.186-.097 10.122-.288 15.485-.464 13.024-1.482 29.811-3.023 37.441-2.351 11.647-5.918 22.646-10.579 31.793-5.477 10.748-12.466 20.379-20.768 28.697-8.321 8.334-17.963 15.351-28.725 20.85-9.099 4.649-20.03 8.214-31.611 10.575-7.707 1.571-24.62 2.61-37.728 3.08-5.358.193-12.292.29-15.49.29l-287.576.046a524.82 524.82 0 01-15.484-.287"
-            transform="matrix(1.33333 0 0 -1.33333 -466.637 1101.177)" />
-          <path
-            d="M524.354 440.616c-6.936-3.47-41.036-20.245-47.395-22.558-6.357-2.314-10.98-3.471-15.604 3.47-4.624 6.942-17.916 22.559-21.963 27.187-4.045 4.627-8.09 5.207-15.026 1.735-6.936-3.47-29.284-10.792-55.776-34.415-20.62-18.384-34.54-41.092-38.586-48.033-4.045-6.942-.43-10.694 3.043-14.151 3.119-3.105 6.935-8.097 10.403-12.147 3.468-4.05 4.624-6.941 6.936-11.568 2.312-4.628 1.156-8.677-.58-12.148-1.732-3.47-15.603-37.598-21.383-51.481-5.63-13.52-11.348-11.69-15.605-11.903-4.042-.201-8.67-.244-13.294-.244-4.624 0-12.137 1.736-18.496 8.676-6.357 6.942-24.274 23.718-24.274 57.844 0 34.128 24.853 67.099 28.32 71.727 3.469 4.628 48.909 74.663 118.485 104.696 16.548 7.144 29.468 11.41 39.54 14.607 16.616 5.276 31.736 4.532 43.687 2.746 13.325-1.99 41.036-16.774 46.816-32.97 5.778-16.196 5.778-30.08 4.045-32.971-1.733-2.892-6.357-4.628-13.293-8.099M397.8 613.355h-.093c-41.4-.016-82.005-11.133-117.428-32.148l-8.425-5-87.322 22.9 23.308-85.11-5.486-8.726c-23.095-36.723-35.292-79.167-35.275-122.747.05-127.168 103.55-230.628 230.813-230.628 61.624.024 119.552 24.047 163.112 67.642 43.56 43.596 67.536 101.545 67.512 163.173-.052 127.177-103.55 230.644-230.716 230.644M594.158 186.41c-52.408-52.452-122.104-81.352-196.36-81.381-153 0-277.524 124.476-277.586 277.477-.02 48.908 12.762 96.65 37.052 138.73l-39.38 143.797 147.152-38.587c40.544 22.107 86.192 33.756 132.65 33.776h.116c152.985 0 277.52-124.492 277.582-277.495.028-74.146-28.817-143.866-81.226-196.317"
-            fill="#fff" />
-        </svg>
-      </a>      
-  </div>    
-      <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-  </div>
-  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-    <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-      <li>
-        <a href="#home" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Inicio</a>
-      </li>
-      <li>
-        <a href="#about" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre</a>
-      </li>
-      <li>
-        <a href="#consult" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Consulta</a>
-      </li>
-      <li>
-        <a href="#maps" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Local</a>
-      </li>
-      <li>
-        <a href="#contact" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contatos</a>
-      </li>
-    </ul>
-  </div>
-  </div>
 
-  <button type="button"  class="absolute top-5 right-10 btnMudarTema">
-    <label class="theme-switch">
-      <input type="checkbox" onclick="Theme.SwitchTheme()" id="btnMudarTema" class="theme-switch__checkbox">
-      <div class="theme-switch__container">
-        <div class="theme-switch__clouds"></div>
-        <div class="theme-switch__stars-container">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path>
-          </svg>
+    <nav class="fixed z-10 bg-white w-screen border-gray-200 dark:bg-gray-900">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="https://flowbite.com/" class="flex items-center">
+          <img src="https://flowbite.com/docs/images/logo.svg" id="EmpresaIcone" class="h-8 mr-3" alt="Flowbite Logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            id="EmpresaNome">Flowbite</span>
+        </a>
+        <div class="flex md:order-2">
+          <div class="gap-3 flex mr-5">
+            <a type="button" id="EmpresaFacebook" href="https://www.facebook.com/" class="btn btn-secundary hide">
+              <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25"
+                viewBox="-204.79995 -341.33325 1774.9329 2047.9995">
+                <path
+                  d="M1365.333 682.667C1365.333 305.64 1059.693 0 682.667 0 305.64 0 0 305.64 0 682.667c0 340.738 249.641 623.16 576 674.373V880H402.667V682.667H576v-150.4c0-171.094 101.917-265.6 257.853-265.6 74.69 0 152.814 13.333 152.814 13.333v168h-86.083c-84.804 0-111.25 52.623-111.25 106.61v128.057h189.333L948.4 880H789.333v477.04c326.359-51.213 576-333.635 576-674.373"
+                  fill="#1877f2" />
+                <path
+                  d="M948.4 880l30.267-197.333H789.333V554.609C789.333 500.623 815.78 448 900.584 448h86.083V280s-78.124-13.333-152.814-13.333c-155.936 0-257.853 94.506-257.853 265.6v150.4H402.667V880H576v477.04a687.805 687.805 0 00106.667 8.293c36.288 0 71.91-2.84 106.666-8.293V880H948.4"
+                  fill="#fff" />
+              </svg>
+            </a>
+            <a type="button" id="EmpresaInstagram" href="https://www.facebook.com/" class="btn btn-secundary hide">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="25" width="25"
+                viewBox="-19.5036 -32.49725 169.0312 194.9835">
+                <defs>
+                  <radialGradient fy="578.088" fx="158.429"
+                    gradientTransform="matrix(0 -1.98198 1.8439 0 -1031.399 454.004)" gradientUnits="userSpaceOnUse"
+                    xlink:href="#a" r="65" cy="578.088" cx="158.429" id="c" />
+                  <radialGradient fy="473.455" fx="147.694"
+                    gradientTransform="matrix(.17394 .86872 -3.5818 .71718 1648.351 -458.493)"
+                    gradientUnits="userSpaceOnUse" xlink:href="#b" r="65" cy="473.455" cx="147.694" id="d" />
+                  <linearGradient id="b">
+                    <stop stop-color="#3771c8" offset="0" />
+                    <stop offset=".128" stop-color="#3771c8" />
+                    <stop stop-opacity="0" stop-color="#60f" offset="1" />
+                  </linearGradient>
+                  <linearGradient id="a">
+                    <stop stop-color="#fd5" offset="0" />
+                    <stop stop-color="#fd5" offset=".1" />
+                    <stop stop-color="#ff543e" offset=".5" />
+                    <stop stop-color="#c837ab" offset="1" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M65.033 0C37.891 0 29.953.028 28.41.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468-4.125 4.282-6.625 9.55-7.53 15.812-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28a27.22 27.22 0 0017.75-14.53c1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624-4.3-4.108-9.56-6.608-15.829-7.512C102.338.157 101.733.027 86.193 0z"
+                  fill="url(#c)" />
+                <path
+                  d="M65.033 0C37.891 0 29.953.028 28.41.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468-4.125 4.282-6.625 9.55-7.53 15.812-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28a27.22 27.22 0 0017.75-14.53c1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624-4.3-4.108-9.56-6.608-15.829-7.512C102.338.157 101.733.027 86.193 0z"
+                  fill="url(#d)" />
+                <path
+                  d="M65.003 17c-13.036 0-14.672.057-19.792.29-5.11.234-8.598 1.043-11.65 2.23-3.157 1.226-5.835 2.866-8.503 5.535-2.67 2.668-4.31 5.346-5.54 8.502-1.19 3.053-2 6.542-2.23 11.65C17.06 50.327 17 51.964 17 65s.058 14.667.29 19.787c.235 5.11 1.044 8.598 2.23 11.65 1.227 3.157 2.867 5.835 5.536 8.503 2.667 2.67 5.345 4.314 8.5 5.54 3.054 1.187 6.543 1.996 11.652 2.23 5.12.233 6.755.29 19.79.29 13.037 0 14.668-.057 19.788-.29 5.11-.234 8.602-1.043 11.656-2.23 3.156-1.226 5.83-2.87 8.497-5.54 2.67-2.668 4.31-5.346 5.54-8.502 1.18-3.053 1.99-6.542 2.23-11.65.23-5.12.29-6.752.29-19.788 0-13.036-.06-14.672-.29-19.792-.24-5.11-1.05-8.598-2.23-11.65-1.23-3.157-2.87-5.835-5.54-8.503-2.67-2.67-5.34-4.31-8.5-5.535-3.06-1.187-6.55-1.996-11.66-2.23-5.12-.233-6.75-.29-19.79-.29zm-4.306 8.65c1.278-.002 2.704 0 4.306 0 12.816 0 14.335.046 19.396.276 4.68.214 7.22.996 8.912 1.653 2.24.87 3.837 1.91 5.516 3.59 1.68 1.68 2.72 3.28 3.592 5.52.657 1.69 1.44 4.23 1.653 8.91.23 5.06.28 6.58.28 19.39s-.05 14.33-.28 19.39c-.214 4.68-.996 7.22-1.653 8.91-.87 2.24-1.912 3.835-3.592 5.514-1.68 1.68-3.275 2.72-5.516 3.59-1.69.66-4.232 1.44-8.912 1.654-5.06.23-6.58.28-19.396.28-12.817 0-14.336-.05-19.396-.28-4.68-.216-7.22-.998-8.913-1.655-2.24-.87-3.84-1.91-5.52-3.59-1.68-1.68-2.72-3.276-3.592-5.517-.657-1.69-1.44-4.23-1.653-8.91-.23-5.06-.276-6.58-.276-19.398s.046-14.33.276-19.39c.214-4.68.996-7.22 1.653-8.912.87-2.24 1.912-3.84 3.592-5.52 1.68-1.68 3.28-2.72 5.52-3.592 1.692-.66 4.233-1.44 8.913-1.655 4.428-.2 6.144-.26 15.09-.27zm29.928 7.97a5.76 5.76 0 105.76 5.758c0-3.18-2.58-5.76-5.76-5.76zm-25.622 6.73c-13.613 0-24.65 11.037-24.65 24.65 0 13.613 11.037 24.645 24.65 24.645C78.616 89.645 89.65 78.613 89.65 65S78.615 40.35 65.002 40.35zm0 8.65c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16 0-8.837 7.163-16 16-16z"
+                  fill="#fff" />
+              </svg>
+            </a>
+            <a type="button" id="EmpresaWhatsApp" href="https://www.facebook.com/" class="btn btn-secundary hide">
+              <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" fill="green"
+                viewBox="-116.80905 -194.68125 1012.3451 1168.0875">
+                <path
+                  d="M482.751 825.596c-13.025-.463-29.812-1.482-37.442-3.022-11.647-2.352-22.646-5.918-31.793-10.58-10.747-5.477-20.379-12.465-28.696-20.769-8.336-8.32-15.352-17.961-20.851-28.724-4.649-9.098-8.213-20.03-10.575-31.611-1.571-7.707-2.61-24.619-3.081-37.728a525.205 525.205 0 01-.289-15.49l-.046-287.576c0-3.185.097-10.121.287-15.485.463-13.024 1.482-29.811 3.023-37.441 2.351-11.646 5.918-22.646 10.579-31.793 5.478-10.748 12.465-20.378 20.769-28.696 8.32-8.335 17.962-15.351 28.724-20.851 9.099-4.648 20.031-8.213 31.611-10.575 7.707-1.571 24.62-2.61 37.729-3.08 5.356-.192 12.291-.29 15.489-.29l287.576-.046c3.186 0 10.122.096 15.484.287 13.025.464 29.813 1.482 37.442 3.023 11.647 2.352 22.647 5.919 31.793 10.579 10.747 5.478 20.379 12.466 28.696 20.769 8.335 8.321 15.351 17.961 20.851 28.724 4.648 9.099 8.214 20.03 10.575 31.611 1.572 7.707 2.61 24.621 3.081 37.729.192 5.357.289 12.291.289 15.489l.047 287.576c0 3.186-.097 10.122-.288 15.485-.464 13.024-1.482 29.811-3.023 37.441-2.351 11.647-5.918 22.646-10.579 31.793-5.477 10.748-12.466 20.379-20.768 28.697-8.321 8.334-17.963 15.351-28.725 20.85-9.099 4.649-20.03 8.214-31.611 10.575-7.707 1.571-24.62 2.61-37.728 3.08-5.358.193-12.292.29-15.49.29l-287.576.046a524.82 524.82 0 01-15.484-.287"
+                  transform="matrix(1.33333 0 0 -1.33333 -466.637 1101.177)" />
+                <path
+                  d="M524.354 440.616c-6.936-3.47-41.036-20.245-47.395-22.558-6.357-2.314-10.98-3.471-15.604 3.47-4.624 6.942-17.916 22.559-21.963 27.187-4.045 4.627-8.09 5.207-15.026 1.735-6.936-3.47-29.284-10.792-55.776-34.415-20.62-18.384-34.54-41.092-38.586-48.033-4.045-6.942-.43-10.694 3.043-14.151 3.119-3.105 6.935-8.097 10.403-12.147 3.468-4.05 4.624-6.941 6.936-11.568 2.312-4.628 1.156-8.677-.58-12.148-1.732-3.47-15.603-37.598-21.383-51.481-5.63-13.52-11.348-11.69-15.605-11.903-4.042-.201-8.67-.244-13.294-.244-4.624 0-12.137 1.736-18.496 8.676-6.357 6.942-24.274 23.718-24.274 57.844 0 34.128 24.853 67.099 28.32 71.727 3.469 4.628 48.909 74.663 118.485 104.696 16.548 7.144 29.468 11.41 39.54 14.607 16.616 5.276 31.736 4.532 43.687 2.746 13.325-1.99 41.036-16.774 46.816-32.97 5.778-16.196 5.778-30.08 4.045-32.971-1.733-2.892-6.357-4.628-13.293-8.099M397.8 613.355h-.093c-41.4-.016-82.005-11.133-117.428-32.148l-8.425-5-87.322 22.9 23.308-85.11-5.486-8.726c-23.095-36.723-35.292-79.167-35.275-122.747.05-127.168 103.55-230.628 230.813-230.628 61.624.024 119.552 24.047 163.112 67.642 43.56 43.596 67.536 101.545 67.512 163.173-.052 127.177-103.55 230.644-230.716 230.644M594.158 186.41c-52.408-52.452-122.104-81.352-196.36-81.381-153 0-277.524 124.476-277.586 277.477-.02 48.908 12.762 96.65 37.052 138.73l-39.38 143.797 147.152-38.587c40.544 22.107 86.192 33.756 132.65 33.776h.116c152.985 0 277.52-124.492 277.582-277.495.028-74.146-28.817-143.866-81.226-196.317"
+                  fill="#fff" />
+              </svg>
+            </a>
+          </div>
+          <button data-collapse-toggle="navbar-cta" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-cta" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
         </div>
-        <div class="theme-switch__circle-container">
-          <div class="theme-switch__sun-moon-container">
-            <div class="theme-switch__moon">
-              <div class="theme-switch__spot"></div>
-              <div class="theme-switch__spot"></div>
-              <div class="theme-switch__spot"></div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#home"
+                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                aria-current="page">Inicio</a>
+            </li>
+            <li>
+              <a href="#about"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre</a>
+            </li>
+            <li>
+              <a href="#consult"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Consulta</a>
+            </li>
+            <li>
+              <a href="#maps"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Local</a>
+            </li>
+            <li>
+              <a href="#contact"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contatos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <button type="button" class="absolute top-15 right-10 btnMudarTema">
+        <label class="theme-switch">
+          <input type="checkbox" onclick="Theme.SwitchTheme()" id="btnMudarTema" class="theme-switch__checkbox">
+          <div class="theme-switch__container">
+            <div class="theme-switch__clouds"></div>
+            <div class="theme-switch__stars-container">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z"
+                  fill="currentColor"></path>
+              </svg>
+            </div>
+            <div class="theme-switch__circle-container">
+              <div class="theme-switch__sun-moon-container">
+                <div class="theme-switch__moon">
+                  <div class="theme-switch__spot"></div>
+                  <div class="theme-switch__spot"></div>
+                  <div class="theme-switch__spot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+      </button>
+    </nav>
+
+  </header>
+
+  <main class="snap-y snap-mandatory scroll-pt-64">
+    <!-- ====== Blog Section Start -->
+    <section id="home" class="snap-start h-screen flex justify-center items-center bg-white dark:bg-gray-900 dark:text-gray-100">
+      <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="mr-auto place-self-center lg:col-span-7">
+          <h1
+            class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+            Dr. Alessandra</h1>
+          <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Formada em
+            medicina no ano de 2022...</p>
+          <a href="#"
+            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center dark:text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+            Marcar Consulta
+            <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+          <a href="#"
+            class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+            Entrar em contato
+          </a>
+        </div>
+        <div class="relative right-10 lg:mt-0 lg:col-span-5 lg:flex rounded-lg">
+          <img id="homeImagem"
+            src="https://firebasestorage.googleapis.com/v0/b/templatemedico.appspot.com/o/inicio_medicos.png?alt=media&token=192b165e-f528-4945-b642-96930b931594.png"
+            alt="mockup">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="snap-start h-screen flex justify-center items-center bg-white dark:bg-gray-900 dark:text-gray-100">
+      <div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+        <div class="flex  items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+          <img class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 rounded-lg"
+            src="https://firebasestorage.googleapis.com/v0/b/templatemedico.appspot.com/o/generico_medico.png?alt=media&token=055e9a47-64b6-422d-8ad2-4f7e96e495e5.png"
+            alt="">
+        </div>
+        <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+          <h1 class="text-5xl font-bold leadi sm:text-6xl">Formações
+          </h1>
+          <p class="mt-6 mb-8 text-lg sm:mb-12">Formada em radiologia, medicina especialização.
+            <!-- <br class="hidden md:inline lg:hidden">turpis pulvinar, est scelerisque ligula sem -->
+          </p>
+          <div
+            class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+            <a rel="noopener noreferrer" href="#"
+              class="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900">Saiba-Mais</a>
+            <a rel="noopener noreferrer" href="#"
+              class="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">Marcar Consulta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="consult" class="snap-start h-fit scroll-my-2 flex justify-center items-center bg-white dark:bg-gray-900 dark:text-gray-100">
+
+      <div class="grid grid-cols-2 place-content-center gap-4">
+
+        <div class="grid gap-4">
+          <div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                <p class="text-gray-700 text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                  perferendis eaque, exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                <p class="text-gray-700 text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                  perferendis eaque, exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                <p class="text-gray-700 text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                  perferendis eaque, exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                <p class="text-gray-700 text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                  perferendis eaque, exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                <p class="text-gray-700 text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                  perferendis eaque, exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="max-w-sm rounded overflow-hidden shadow-lg">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                <p class="text-gray-700 text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                  perferendis eaque, exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- component -->
+    <section id="maps" class="snap-start h-112 mr-8 scroll-my-2 ml-8 text-gray-600 body-font relative">
+      <div class="absolute inset-0 bg-gray-300">
+        <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no"
+          src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+          style=""></iframe>
+      </div>
+      <div class="container px-5 py-24 mx-auto flex">
+        <div
+          class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-5 shadow-md">
+          <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+          <p class="leading-relaxed mb-5 text-gray-600">envie sua opnião</p>
+          <div class="relative mb-4">
+            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+            <input type="email" id="email" name="email"
+              class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <div class="relative mb-4">
+            <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+            <textarea id="message" name="message"
+              class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+          <button
+            class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+          <p class="text-xs text-gray-500 mt-3">Sua informação sera analisada.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="snap-start flex h-fit justify-center items-center bg-white dark:bg-gray-900 dark:text-gray-100">
+      <div class="container mx-auto pt-4">
+        <div class="flex flex-wrap justify-center">
+          <div class="w-full px-4">
+            <div class="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
+              <span class="text-primary mb-2 block text-lg font-semibold">
+                Novidades
+              </span>
+              <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
+                Novidades recentes
+              </h2>
+              <p class="text-body-color text-base">
+                A Dr. Alessandra faz divesas participações em pro da saúde.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="mx-auto mb-10 max-w-[370px]">
+              <div class="mb-8 overflow-hidden rounded">
+                <img src="https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-01.jpg" alt="image"
+                  class="w-full" />
+              </div>
+              <div>
+                <span
+                  class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white">
+                  Dec 22, 2023
+                </span>
+                <h3>
+                  <a href="javascript:void(0)"
+                    class="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl">
+                    Palestra sobre educação
+                  </a>
+                </h3>
+                <p class="text-body-color text-base">
+                  A Dr. Fez uma palestra sobre a importancia do bom atendimento ao cliente.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="mx-auto mb-10 max-w-[370px]">
+              <div class="mb-8 overflow-hidden rounded">
+                <img src="https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-02.jpg" alt="image"
+                  class="w-full" />
+              </div>
+              <div>
+                <span
+                  class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white">
+                  Mar 15, 2023
+                </span>
+                <h3>
+                  <a href="javascript:void(0)"
+                    class="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl">
+                    Pastelada benificente
+                  </a>
+                </h3>
+                <p class="text-body-color text-base">
+                  Foi apoiadora de uma pastelada benificente.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="mx-auto mb-10 max-w-[370px]">
+              <div class="mb-8 overflow-hidden rounded">
+                <img src="https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-03.jpg" alt="image"
+                  class="w-full" />
+              </div>
+              <div>
+                <span
+                  class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white">
+                  Jan 05, 2023
+                </span>
+                <h3>
+                  <a href="javascript:void(0)"
+                    class="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl">
+                    Passou em 3°
+                  </a>
+                </h3>
+                <p class="text-body-color text-base">
+                  Foi um dos primeiros no vestibular.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </label>
-</button>
-</nav>
-
-  </header>
-
-  <main>
-    <!-- ====== Blog Section Start -->
-    <section id="home" class="h-screen flex justify-center items-center bg-white dark:bg-gray-900">
-      <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-          <div class="mr-auto place-self-center lg:col-span-7">
-              <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Dr. Alessandra</h1>
-              <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Formada em medicina no ano de 2022...</p>
-              <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center dark:text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                  Marcar Consulta
-                  <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-              </a>
-              <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                  Entrar em contato
-              </a> 
-          </div>
-          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex border  dark:border-slate-100/5">
-              <img id="homeImagem" src="https://firebasestorage.googleapis.com/v0/b/templatemedico.appspot.com/o/inicio_medicos.png?alt=media&token=192b165e-f528-4945-b642-96930b931594.png" alt="mockup">
-          </div>                
-      </div>
-  </section>
-
-  <section id="about" class="h-screen flex justify-center items-center dark:bg-gray-900 dark:text-gray-100">
-    <div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-      <div class="flex  items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-        <img class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 rounded-lg" src="https://firebasestorage.googleapis.com/v0/b/templatemedico.appspot.com/o/generico_medico.png?alt=media&token=055e9a47-64b6-422d-8ad2-4f7e96e495e5.png" alt="" >
-      </div>
-      <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-        <h1 class="text-5xl font-bold leadi sm:text-6xl">Formações
-        </h1>
-        <p class="mt-6 mb-8 text-lg sm:mb-12">Formada em radiologia, medicina especialização.
-          <!-- <br class="hidden md:inline lg:hidden">turpis pulvinar, est scelerisque ligula sem -->
-        </p>
-        <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-          <a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900">Saiba-Mais</a>
-          <a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">Marcar Consulta</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="consult"   class="h-screen flex justify-center items-center dark:bg-gray-900 dark:text-gray-100">
-    
-<div class="grid grid-cols-2 place-content-center gap-4">
-  
-  <div class="grid gap-4">
-      <div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-            <p class="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-            </p>
-          </div>
-          <div class="px-6 pt-4 pb-2">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-          </div>
-        </div>      </div>
-      <div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-            <p class="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-            </p>
-          </div>
-          <div class="px-6 pt-4 pb-2">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-          </div>
-        </div>      </div>
-      <div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-            <p class="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-            </p>
-          </div>
-          <div class="px-6 pt-4 pb-2">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-          </div>
-        </div>      </div>
-  </div>
-  <div class="grid gap-4">
-      <div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-            <p class="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-            </p>
-          </div>
-          <div class="px-6 pt-4 pb-2">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-          </div>
-        </div>      </div>
-      <div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-            <p class="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-            </p>
-          </div>
-          <div class="px-6 pt-4 pb-2">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-          </div>
-        </div>      </div>
-      <div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-            <p class="text-gray-700 text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-            </p>
-          </div>
-          <div class="px-6 pt-4 pb-2">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-          </div>
-        </div>      </div>
-  </div>
-  
-</div>
-
-  </section>
-
-  <!-- component -->
-<section id="maps" class="h-112 mr-8 ml-8 text-gray-600 body-font relative">
-  <div class="absolute inset-0 bg-gray-300">
-    <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style=""></iframe>
-  </div>
-  <div class="container px-5 py-24 mx-auto flex">
-    <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-      <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
-      <p class="leading-relaxed mb-5 text-gray-600">envie sua opnião</p>
-      <div class="relative mb-4">
-        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-        <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-      </div>
-      <div class="relative mb-4">
-        <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-        <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-      </div>
-      <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-      <p class="text-xs text-gray-500 mt-3">Sua informação sera analisada.</p>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="flex justify-center items-center  dark:bg-gray-900 dark:text-gray-100 pb-10 mt-5 lg:pb-20">
-  <div class="container mx-auto">
-    <div class="flex flex-wrap justify-center">
-      <div class="w-full px-4">
-        <div class="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
-          <span class="text-primary mb-2 block text-lg font-semibold">
-            Novidades
-          </span>
-          <h2
-            class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"
-          >
-            Novidades recentes
-          </h2>
-          <p class="text-body-color text-base">
-            A Dr. Alessandra faz divesas participações em pro da saúde.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="flex flex-wrap">
-      <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-        <div class="mx-auto mb-10 max-w-[370px]">
-          <div class="mb-8 overflow-hidden rounded">
-            <img
-              src="https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-01.jpg"
-              alt="image"
-              class="w-full"
-            />
-          </div>
-          <div>
-            <span
-              class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
-            >
-              Dec 22, 2023
-            </span>
-            <h3>
-              <a
-                href="javascript:void(0)"
-                class="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
-              >
-                Palestra sobre educação
-              </a>
-            </h3>
-            <p class="text-body-color text-base">
-              A Dr. Fez uma palestra sobre a importancia do bom atendimento ao cliente.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-        <div class="mx-auto mb-10 max-w-[370px]">
-          <div class="mb-8 overflow-hidden rounded">
-            <img
-              src="https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-02.jpg"
-              alt="image"
-              class="w-full"
-            />
-          </div>
-          <div>
-            <span
-              class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
-            >
-              Mar 15, 2023
-            </span>
-            <h3>
-              <a
-                href="javascript:void(0)"
-                class="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
-              >
-                Pastelada benificente
-              </a>
-            </h3>
-            <p class="text-body-color text-base">
-              Foi apoiadora de uma pastelada benificente.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-        <div class="mx-auto mb-10 max-w-[370px]">
-          <div class="mb-8 overflow-hidden rounded">
-            <img
-              src="https://cdn.tailgrids.com/2.0/image/application/images/blogs/blog-01/image-03.jpg"
-              alt="image"
-              class="w-full"
-            />
-          </div>
-          <div>
-            <span
-              class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
-            >
-              Jan 05, 2023
-            </span>
-            <h3>
-              <a
-                href="javascript:void(0)"
-                class="text-dark hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
-              >
-                Passou em 3°
-              </a>
-            </h3>
-            <p class="text-body-color text-base">
-              Foi um dos primeiros no vestibular.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ====== Blog Section End -->
+    </section>
 
   </main>
 
   <footer class="mx-auto mt-32 w-full max-w-container px-4 sm:px-6 dark:bg-gray-900 dark:text-gray-100 lg:px-8">
-    <div class="border-t dark:border-slate-100/5 border-slate-900/5 py-10"><svg class="mx-auto h-5 w-auto text-slate-900" aria-hidden="true"
-        viewBox="0 0 160 24" fill="none">
+    <div class="border-t dark:border-slate-100/5 border-slate-900/5 py-10"><svg
+        class="mx-auto h-5 w-auto text-slate-900" aria-hidden="true" viewBox="0 0 160 24" fill="none">
         <path
           d="M18.724 1.714c-4.538 0-7.376 2.286-8.51 6.857 1.702-2.285 3.687-3.143 5.957-2.57 1.296.325 2.22 1.271 3.245 2.318 1.668 1.706 3.6 3.681 7.819 3.681 4.539 0 7.376-2.286 8.51-6.857-1.701 2.286-3.687 3.143-5.957 2.571-1.294-.325-2.22-1.272-3.245-2.32-1.668-1.705-3.6-3.68-7.819-3.68zM10.214 12c-4.539 0-7.376 2.286-8.51 6.857 1.701-2.286 3.687-3.143 5.957-2.571 1.294.325 2.22 1.272 3.245 2.32 1.668 1.705 3.6 3.68 7.818 3.68 4.54 0 7.377-2.286 8.511-6.857-1.702 2.286-3.688 3.143-5.957 2.571-1.295-.326-2.22-1.272-3.245-2.32-1.669-1.705-3.6-3.68-7.82-3.68z"
           class="fill-sky-400"></path>

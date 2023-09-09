@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -6,11 +10,6 @@ body {
     "cv11", "salt", "ss01", "ss03",
     "cv01", "cv01", "cv03", "cv04",
     "cv05", "cv06", "cv09", "cv10";
-}
-
-
-html{
-  scroll-behavior: smooth;
 }
 
 .theme-switch {
